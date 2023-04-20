@@ -1,0 +1,19 @@
+<% @result.each do |element| %>
+  <div class = "p-8 mx-80 mt-6 flex justify-center bg-white rounded-lg shadow-lg ">
+    <div class="">
+      <% unless element["error_message"].present? %>
+        <h1 class="text-3xl font-bold mb-4">Entreprise <%= element["nom_entreprise"] %></h1>
+        <p class="text-lg mb-2">Code Siren : <%= element["code_siren"]  %></p>
+        <p class="text-lg mb-2">Code NIC : <%= element["code_nic"]  %></p>
+        <p class="text-lg mb-2">Code Siret : <%= element["code_siret"]  %></p>
+        <p class="text-lg mb-2">Catégorie de l'entreprise : <%= element["categorie"] %></p>
+        <p class="text-lg mb-2">Etat : <%= element["etat"] %></p>
+        <p class="text-lg mb-2">Date de création de l'entreprise : <%= element["date"] %></p>
+        <p class="text-lg mb-2">Adresse : <%= element["adresse"] %></p>
+      <% else %>
+        <p class="text-lg"><%= element["error_message"] %></p>
+      <% end %>
+    </div>
+  </div>
+<%end%>
+

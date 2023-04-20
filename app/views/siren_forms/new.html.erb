@@ -1,0 +1,16 @@
+<div class="container mx-auto py-8">
+  <div class="max-w-xl mx-auto">
+    <h1 class="text-2xl font-bold mb-4">Recherche par code SIREN :</h1>
+    <%= form_with model: @siren_form, class: "mb-8" do |form| %>
+      <%= form.text_field :siren, placeholder: "Entrez le numéro SIREN", class: "border rounded py-2 px-3 w-full mb-4" %>
+      <%= form.submit "Rechercher", class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
+    <% end %>
+
+    <h1 class="text-2xl font-bold mb-4">Recherche par NOM de l'Entreprise :</h1>
+    <%= form_with model: @siren_form, class: "mb-8" do |form| %>
+      <%= form.text_field :name, placeholder: "Entrez le NOM de l'Entreprise", class: "border rounded py-2 px-3 w-full mb-4" %>
+      <%= form.submit "Rechercher", class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
+    <% end %>
+  </div>
+</div>
+
