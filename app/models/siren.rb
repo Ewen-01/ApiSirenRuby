@@ -1,7 +1,7 @@
 class Siren < ApplicationRecord
     def self.search(siren_form)
             # Votre clé d'API
-        api_key = '03cba6df-a566-39be-b892-d3f33683c2db'
+        api_key = '2a91ee8f-0be7-3d3d-96fa-0c74647eef98'
 
         if siren_form.siren.present?
             # Récupération du numéro de SIREN entré par l'utilisateur
