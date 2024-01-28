@@ -3,6 +3,10 @@
   <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
     <div class="relative sm:rounded-2xl sm:overflow-hidden bg-[url('fond4.png')] bg-auto bg-no-repeat bg-center h-screen">
     </div>
+    <% @posts.each do |post| %>
+      <h2><%= post.title %></h2>
+      <p><%= post.content %></p>
+    <% end %>
   </div>
 </div>
 

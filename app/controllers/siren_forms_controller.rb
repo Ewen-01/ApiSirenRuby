@@ -6,6 +6,7 @@ class SirenFormsController < ApplicationController
 
   def create
     @siren_form = SirenForm.new(siren_params)
+    @posts = Post.all
     @ResultList = Siren.search(@siren_form)
     redirect_to siren_form_path(1, result: @ResultList)
   end

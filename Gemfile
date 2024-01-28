@@ -5,6 +5,8 @@ ruby "3.2.2"
 
 gem "devise"
 
+gem "mysql2"
+
 gem "httparty"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
